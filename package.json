@@ -1,0 +1,14 @@
+{
+  "name": "634resort",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy:staging": "wrangler deploy",
+    "deploy:production": "wrangler deploy --env production",
+    "health": "node scripts/health.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "^4.24.0"
+  }
+}

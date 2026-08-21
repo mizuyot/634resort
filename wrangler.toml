@@ -1,0 +1,35 @@
+name = "634resort-web-staging"
+main = "src/worker.js"
+compatibility_date = "2025-04-01"
+account_id = "c1941d954f185c591cbd225feade2cd9"
+workers_dev = true
+
+[vars]
+APP_ENV = "staging"
+
+[assets]
+directory = "./site"
+binding = "ASSETS"
+html_handling = "auto-trailing-slash"
+not_found_handling = "404-page"
+run_worker_first = true
+
+[observability]
+enabled = true
+
+[env.production]
+name = "634resort-web"
+workers_dev = true
+
+[env.production.vars]
+APP_ENV = "production"
+
+[env.production.assets]
+directory = "./site"
+binding = "ASSETS"
+html_handling = "auto-trailing-slash"
+not_found_handling = "404-page"
+run_worker_first = true
+
+[env.production.observability]
+enabled = true

@@ -1,0 +1,575 @@
+@charset "UTF-8";
+
+/* -------------------------------------------
+
+kv
+
+------------------------------------------- */
+.top-kv {
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .top-kv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* ---- main ---- */
+#main {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.top-kv,
+#main {
+  height: 90vh;
+}
+@media screen and (max-width: 768px) {
+  .top-kv,
+  #main {
+    height: 68rem;
+  }
+}
+/* ---- wrap ---- */
+.top-kv .wrap {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .top-kv .wrap {
+    padding-top: 5rem;
+    left: auto;
+    top: auto;
+    position: relative;
+    transform: none;
+  }
+}
+/* ---- p ---- */
+.top-kv .wrap p {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+.top-kv .wrap .txt-en {
+  font-family: var(--font-josefin);
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .top-kv .wrap .txt-en {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+  }
+  .top-kv .wrap .txt-jp {
+    font-size: 1.6rem;
+  }
+}
+/* ---- book ---- */
+.btn-book {
+  position: absolute;
+  right: 14rem;
+  bottom: 5rem;
+  z-index: 10;
+}
+.btn-book a {
+  width: 9rem;
+  height: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: var(--font-lato);
+  font-weight: 300;
+  line-height: 1.3;
+  font-size: 1.4rem;
+  border-radius: 50%;
+  background: var(--grey);
+  color: #fff;
+  letter-spacing: 0.15em;
+  padding-top: 0.2rem;
+  padding-left: 0.25rem;
+}
+@media screen and (max-width: 768px) {
+  .btn-book {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    margin-top: 5rem;
+  }
+  .btn-book a {
+    width: 13rem;
+    height: 13rem;
+    font-size: 1.9rem;
+    padding-top: 0.3rem;
+    padding-left: 0.3rem;
+  }
+}
+
+/* -------------------------------------------
+
+concept
+
+------------------------------------------- */
+.top-concept {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url(../img/deco-1.png) no-repeat right 17rem bottom 5rem;
+  background-size: 12rem auto;
+}
+.top-concept > * {
+  width: 46%;
+}
+.top-concept > figure {
+  padding-left: 8rem;
+}
+.top-concept > div {
+  padding-right: 20rem;
+}
+@media screen and (max-width: 768px) {
+  .top-concept {
+    display: block;
+    background: url(../img/deco-1.png) no-repeat right -1rem bottom 2rem;
+    background-size: 10rem auto;
+    padding: 2rem 0 6rem 0;
+  }
+  .top-concept > * {
+    width: 100%;
+  }
+  .top-concept > figure {
+    padding-left: 0;
+    margin-bottom: 6rem;
+  }
+  .top-concept > div {
+    padding: 0 2rem;
+  }
+}
+/* ---- h2 ---- */
+.top-concept h2 {
+  font-family: var(--font-josefin);
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: solid 0.1rem #000;
+}
+@media screen and (max-width: 768px) {
+  .top-concept h2 {
+    font-size: 2.1rem;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+/* ---- p ---- */
+.top-concept .txt-en {
+  font-family: var(--font-lato);
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+}
+.top-concept .txt-jp {
+  margin-bottom: 6rem;
+}
+
+/* -------------------------------------------
+
+guest
+
+------------------------------------------- */
+.top-guest {
+  background: var(--bg-grey);
+}
+@media screen and (max-width: 768px) {
+  .top-guest {
+    padding: 0;
+  }
+}
+/* ---- ul ---- */
+.top-guest ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.top-guest ul li {
+  width: 31%;
+  margin-right: 3.5%;
+  overflow: hidden;
+}
+.top-guest ul li:nth-child(3n) {
+  margin-right: 0;
+}
+.top-guest ul li:nth-child(n + 4) {
+  margin-top: 3.5%;
+}
+.top-guest ul li a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: var(--font-josefin);
+  font-weight: bold;
+  font-size: 1.8rem;
+  letter-spacing: 0.1em;
+  height: 40rem;
+  background-color: black;
+}
+.top-guest ul li a span {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+.top-guest ul li a::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.3s;
+}
+.top-guest ul li:nth-child(1) a::before {
+  background: url(../img/top-bg-shinjuku.jpg) no-repeat center / cover;
+  opacity: 0.4;
+}
+.top-guest ul li:nth-child(2) a::before {
+  background: url(../img/top-bg-yotsuya.jpg) no-repeat center / cover;
+  opacity: 0.4;
+}
+.top-guest ul li:nth-child(3) a::before {
+  background: url(../img/top-bg-morishita2.jpg) no-repeat center / cover;
+}
+.top-guest ul li:nth-child(4) a::before {
+  background: url(../img/top-bg-takadanobaba.jpg) no-repeat center / cover;
+}
+.top-guest ul li:nth-child(5) a::before {
+  background: url(../img/top-bg-kanazawa.jpg) no-repeat center / cover;
+}
+.top-guest ul li a:hover {
+  opacity: 1;
+}
+.top-guest ul li a:hover::before {
+  transform: scale(1.1);
+}
+@media screen and (max-width: 768px) {
+  .top-guest ul {
+    display: block;
+  }
+  .top-guest ul li {
+    width: 100%;
+    margin-right: 0;
+  }
+  .top-guest ul li:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  .top-guest ul li:nth-child(n + 4) {
+    margin-top: 0;
+  }
+  .top-guest ul li a {
+    font-size: 2rem;
+    height: 24rem;
+  }
+  .top-guest ul li:nth-child(1) a::before {
+    background: url(../img/top-bg-shinjuku.jpg) no-repeat center / cover;
+    opacity: 0.4;
+  }
+  .top-guest ul li:nth-child(2) a::before {
+    background: url(../img/top-bg-yotsuya-sp.jpg) no-repeat center / cover;
+    opacity: 0.4;
+  }
+  .top-guest ul li:nth-child(3) a::before {
+    background: url(../img/top-bg-morishita2-sp.jpg) no-repeat center / cover;
+  }
+  .top-guest ul li:nth-child(4) a::before {
+    background: url(../img/top-bg-takadanobaba-sp.jpg) no-repeat center / cover;
+  }
+  .top-guest ul li:nth-child(5) a::before {
+    background: url(../img/top-bg-kanazawa-sp.jpg) no-repeat center / cover;
+  }
+}
+
+/* -------------------------------------------
+
+feature
+
+------------------------------------------- */
+.top-feature {
+  background: url(../img/deco-2.png) no-repeat right top,
+    url(../img/deco-3.png) no-repeat left bottom;
+  background-size: 16rem auto, 30rem auto;
+}
+@media screen and (max-width: 768px) {
+  .top-feature {
+    background: url(../img/deco-5.png) no-repeat right bottom 22rem;
+    background-size: 9rem auto;
+  }
+}
+/* ---- h2 ---- */
+.top-feature h2 {
+  font-family: var(--font-josefin);
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 1;
+  margin-bottom: 15rem;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .top-feature h2 {
+    font-size: 2.4rem;
+    margin-bottom: 5rem;
+  }
+}
+/* ---- wrap ---- */
+.top-feature .wrap {
+  display: flex;
+  margin-bottom: 8rem;
+}
+.top-feature .wrap > figure {
+  width: 52%;
+  position: relative;
+}
+.top-feature .wrap > figure > div {
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+}
+.top-feature .wrap > figure > div:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 85%;
+  height: 85%;
+}
+.top-feature .wrap > figure > div:nth-child(2) {
+  bottom: 0;
+  right: 0;
+  width: 47%;
+  height: 47%;
+}
+.top-feature .wrap > div {
+  width: 48%;
+  padding-left: 7rem;
+}
+@media screen and (max-width: 768px) {
+  .top-feature .wrap {
+    display: block;
+    padding: 0 2rem;
+    margin-bottom: 8rem;
+  }
+  .top-feature .wrap > figure {
+    width: 100%;
+    margin-bottom: 7rem;
+  }
+  .top-feature .wrap > figure > div {
+    position: relative;
+    width: 100% !important;
+    height: 21rem !important;
+  }
+  .top-feature .wrap > figure > div:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  .top-feature .wrap > div {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+/* ---- txt ---- */
+.top-feature .txt-en {
+  margin-bottom: 3.5rem;
+  font-family: var(--font-lato);
+  font-weight: 300;
+}
+
+.top-feature .txt-en > ul,
+.top-feature .txt-jp > ul {
+  margin-bottom: 0.8rem;
+}
+.top-feature .txt-en > ul li:not(:last-child),
+.top-feature .txt-jp > ul li:not(:last-child),
+.top-feature .txt-en dd ul li:not(:last-child),
+.top-feature .txt-jp dd ul li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.top-feature ul li::before {
+  content: "-";
+  margin-right: 0.5rem;
+}
+/* ---- dl ---- */
+.top-feature dt {
+  margin-bottom: 0.3rem;
+}
+.top-feature dt::before {
+  content: "■";
+}
+.top-feature dd {
+  margin-left: 2rem;
+}
+/* ---- more ---- */
+.top-feature .more {
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+}
+
+/* -------------------------------------------
+
+image
+
+------------------------------------------- */
+.top-image {
+  background: url(../img/deco-4.png) no-repeat right bottom;
+  background-size: 32rem auto;
+  background-color: var(--bg-grey);
+}
+@media screen and (max-width: 768px) {
+  .top-image {
+    background: none;
+    background-color: var(--bg-grey);
+    padding: 2rem;
+  }
+}
+/* ---- ul ---- */
+.top-image ul {
+  display: flex;
+  justify-content: space-between;
+}
+.top-image ul li {
+  width: 30%;
+  aspect-ratio: 9/16;
+  background-size: cover;
+  background-position: center;
+}
+.top-image ul li:nth-child(1) {
+  margin-top: 16rem;
+}
+.top-image ul li:nth-child(2) {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+.top-image ul li:nth-child(3) {
+  margin-bottom: 16rem;
+}
+@media screen and (max-width: 768px) {
+  .top-image ul {
+    display: block;
+  }
+  .top-image ul li {
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
+  .top-image ul li:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  .top-image ul li:nth-child(1) {
+    margin-top: 0;
+  }
+  .top-image ul li:nth-child(2) {
+    margin-top: 0;
+  }
+}
+
+/* -------------------------------------------
+
+access
+
+------------------------------------------- */
+@media screen and (max-width: 768px) {
+  .top-access {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+/* ---- wrap ---- */
+.top-access .wrap {
+  display: flex;
+  align-items: center;
+}
+.top-access .wrap > div {
+  width: 30%;
+  padding-right: 4rem;
+}
+.top-access .wrap > figure {
+  width: 70%;
+}
+@media screen and (max-width: 768px) {
+  .top-access .wrap {
+    display: block;
+  }
+  .top-access .wrap > div {
+    width: 100%;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .top-access figure {
+    margin-bottom: 3rem;
+  }
+}
+/* ---- h2 ---- */
+.top-access h2 {
+  font-family: var(--font-josefin);
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2.5rem;
+  border-bottom: solid 0.1rem #000;
+}
+@media screen and (max-width: 768px) {
+  .top-access h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    border-bottom: none;
+    text-align: center;
+  }
+}
+/* ---- ul ---- */
+.top-access ul {
+  margin-bottom: 10rem;
+}
+.top-access ul li {
+  display: flex;
+  align-items: center;
+}
+.top-access ul li > i {
+  font-size: 2.4rem;
+}
+.top-access ul li > span {
+  padding-left: 1rem;
+  font-family: var(--font-lato);
+  font-weight: bold;
+}
+.top-access ul li > span i {
+  display: block;
+  font-weight: normal;
+  font-size: 1rem;
+}
+.top-access ul li:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  .top-access ul {
+    margin-bottom: 8rem;
+  }
+  .top-access ul li > i {
+    font-size: 2.8rem;
+  }
+  .top-access ul li > span i {
+    font-size: 1.2rem;
+  }
+}
