@@ -1,0 +1,10 @@
+---
+description: 634 Group AI 運用憲章への参照（本文は複製しない）
+alwaysApply: true
+---
+
+# 正本: ../../634/AGENTS.md
+作業前に AGENTS.md・docs/ownership-map.md・metrics.yml を読むこと。
+ファイルを新規作成する前に、そのファイルの復元元（Git / SharePoint / OneDrive / SaaS）を1行で宣言する。復元元が無いファイルは作らない。
+書き込み系の実装は既定で無効化し、人の明示的な有効化を待つ。
+憲章本文はここに複製せず AGENTS.md を読む。
